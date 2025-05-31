@@ -2,4 +2,5 @@ rootProject.name = 'guide-to-belarus'
 include 'web'
 include 'service'
 include 'data'
+include 'common'
 
