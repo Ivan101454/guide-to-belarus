@@ -11,9 +11,9 @@ import java.util.UUID;
  * @param title - name of the article
  * @param content - preview text
  * @param category - category the article belongs to (e.g. FOOD, CULTURE)
- * @param published - date the article was published
+ * @param published - date the article was 1published
  */
-public record Article(
+public record ArticleDto(
         UUID id, String title, String content, Category category, Date published
         ) {
 }
