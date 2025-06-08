@@ -19,15 +19,15 @@ public class ArticleController {
 //        return new ArticleDto(article);
 //    }
 
-    @GetMapping("/684c09fa-789e-416c-b4ea-fc994bc1a1f7")
+    @GetMapping()
     public String getTestArticle() {
-        return "catalogue/articles/zoo-part-1";
+        return "catalogue/articles/loshitsa-driving-on-electric-car";
     }
 
-    @GetMapping()
-    public String getArticle() {
-        return "catalogue/articles/zoo-part-1";
-    }
+//    @GetMapping()
+//    public String getArticle() {
+//        return "catalogue/articles/zoo-part-1";
+//    }
 
     @GetMapping("/edit")
     public String editArticleEditPage(Model model) {

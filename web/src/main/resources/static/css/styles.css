@@ -11,14 +11,37 @@ main {
     display: grid;
     grid-template-columns: 1fr repeat(4, 1fr) 1fr;
     grid-row-gap: 1em;
-
+    font-size: 18px;
+    background-color: white;
 }
-main img, p, h1 {
+main p, h1, h3 {
     grid-column: 2 / span 4;
+    text-align: center;
+}
+
+main > h3 {
+    text-transform: capitalize;
 }
 
 main img {
     max-width: 100%;
+    grid-column: 3 / span 2;
     height: auto;
     display: block;
+}
+
+.strip-links {
+    background-color: #4C6C92;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 40;
+}
+
+.strip-right {
+    background-color: #4C6C92;
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 40;
 }

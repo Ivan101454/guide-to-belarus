@@ -1,4 +1,4 @@
-package by.ivan101454;
+package by.ivan101454.common;
 
 
 public class CommonApplication {

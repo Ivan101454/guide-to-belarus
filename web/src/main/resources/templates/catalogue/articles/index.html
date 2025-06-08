@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Home &ndash; Guide to Belarus</title>
+    <link rel="stylesheet" data-th-href="@{/css/home-style.css}">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
+</head>
+<body>
+<header>
+    <h1>Welcome To Belarus</h1>
+    <p>This site shares a personal journey through Belarus.</p>
+</header>
+<nav>
+    <ul>
+        <li><a data-th-href="@{/#}">LANDMARK</a></li>
+        <li><a data-th-href="@{/#}">NATURE</a></li>
+        <li><a data-th-href="@{/#}">EVENT</a></li>
+        <li><a data-th-href="@{/#}">FOOD</a></li>
+        <li><a data-th-href="@{/#}">CULTURE</a></li>
+        <li id="nav-space"></li>
+        <li id="nav-find">FIND</li>
+    </ul>
+</nav>
+<main>
+    <div data-th-each="article : ${list}" class="card">
+        <a data-th-href="@{/web/articles/{id}(id=${article.id})}">
+            <img src="">
+        </a>
+        <div class="text">
+            <h3 data-th-text="${article.title}"></h3>
+            <p></p>
+        </div>
+        <button></button>
+
+    </div>
+</main>
+<footer>
+    <h1>Welcome To Belarus</h1>
+    <p>This site shares a personal journey through Belarus!!</p>
+</footer>
+</body>
+</html>
