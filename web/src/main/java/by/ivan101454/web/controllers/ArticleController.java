@@ -21,7 +21,7 @@ public class ArticleController {
 
     @GetMapping()
     public String getTestArticle() {
-        return "catalogue/articles/loshitsa-driving-on-electric-car";
+        return "catalogue/articles/zerno";
     }
 
 //    @GetMapping()
